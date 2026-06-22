@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibizza Boutique — Surat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ════ NAV ════════════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-wrap">
+    <a href="#" class="n-logo">Ibizza</a>
+
+    <ul class="n-links">
+      <li><a href="#about">Story</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+
+    <div class="n-right">
+      <a href="https://www.instagram.com/ibizzasurat/" target="_blank" class="n-ig" aria-label="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/>
+        </svg>
+        @ibizzasurat
+      </a>
+      <a href="tel:+919327942403" class="n-cta">+91 93279 42403</a>
+      <button class="n-ham" id="hamBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ════ MOBILE MENU ════════════════════════════════════ -->
+<div id="mob" role="dialog" aria-modal="true">
+  <button id="mob-x" aria-label="Close">✕</button>
+  
+  <div class="mob-links">
+    <a href="#about"        onclick="closeMob()">Story</a>
+    <a href="#collections"  onclick="closeMob()">Collections</a>
+    <a href="#testimonials" onclick="closeMob()">Reviews</a>
+    <a href="#visit"        onclick="closeMob()">Visit</a>
+  </div>
+
+  <div class="mob-foot">
+    <div class="mob-foot-title">Ibizza Boutique</div>
+    <div class="mob-foot-text">U-1 &amp; 2, Jolly Arcade, Ghod Dod Rd<br>Surat, Gujarat — 395007</div>
+    <a href="https://www.instagram.com/ibizzasurat/" target="_blank" class="mob-ig">Follow @ibizzasurat</a>
+  </div>
+</div>
+
+<!-- ════ HERO ════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-eyebrow">
+    <span>Women's Boutique · Surat · Gujarat</span>
+  </div>
+
+  <div class="hero-rating-badge">
+    <div class="hrb-stars">★★★★</div>
+    <div>
+      <div class="hrb-score">4.2</div>
+      <div class="hrb-label">Google</div>
+    </div>
+  </div>
+
+  <div class="hero-content" id="heroCtx">
+    <h1 class="hero-name">IBI<span class="hero-name-accent">ZZA</span></h1>
+
+    <div class="hero-foot">
+      <p class="hero-tagline">
+        Where every woman<br>finds her finest form.
+      </p>
+      <div class="hero-btns">
+        <a href="#collections" class="arr-link arr-ink">Explore</a>
+        <a href="#visit"       class="arr-link arr-wine">Visit Store</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TICKER ══════════════════════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="t-item">New Arrivals</span><span class="t-sep">·</span>
+    <span class="t-item">Trendy Collections</span><span class="t-sep">·</span>
+    <span class="t-item">Women's Fashion</span><span class="t-sep">·</span>
+    <span class="t-item">In-Store &amp; Delivery</span><span class="t-sep">·</span>
+    <span class="t-item">Surat's Finest Boutique</span><span class="t-sep">·</span>
+    <span class="t-item">Proudly Women-Owned</span><span class="t-sep">·</span>
+    <span class="t-item">New Arrivals</span><span class="t-sep">·</span>
+    <span class="t-item">Trendy Collections</span><span class="t-sep">·</span>
+    <span class="t-item">Women's Fashion</span><span class="t-sep">·</span>
+    <span class="t-item">In-Store &amp; Delivery</span><span class="t-sep">·</span>
+    <span class="t-item">Surat's Finest Boutique</span><span class="t-sep">·</span>
+    <span class="t-item">Proudly Women-Owned</span><span class="t-sep">·</span>
+  </div>
+</div>
+
+<!-- ════ ABOUT ═══════════════════════════════════════════ -->
+<section id="about">
+  <p class="about-pull reveal">
+    “Best place for shopping — quality of clothes is very good and all are trendy.”
+  </p>
+
+  <div class="about-grid">
+    <div class="about-img reveal">
+      <img
+        src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80"
+        alt="Ibizza Boutique — curated women's fashion in Surat"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="about-left">
+      <div class="s-label reveal"><span>Our Story</span></div>
+      <h2 class="s-title reveal d1">
+        Fashion curated<br>for the <em>modern woman.</em>
+      </h2>
+      <br>
+      <p class="reveal d2">
+        Ibizza Boutique was founded with a singular vision — to bring premium, trend-forward women's fashion to Surat. Nestled in the heart of Athwa at Jolly Arcade, we curate pieces that blend contemporary style with timeless elegance.
+      </p>
+      <p class="reveal d3">
+        Every piece is handpicked for quality, craftsmanship, and that special something that makes a woman feel extraordinary. From casual chic to festive glamour, we believe fashion should be an expression of your truest self.
+      </p>
+    </div>
+
+    <div class="about-right reveal d2">
+      <div class="stat-grid">
+        <div>
+          <div class="stat-n">4★</div>
+          <div class="stat-l">Google Rating</div>
+        </div>
+        <div>
+          <div class="stat-n">∞</div>
+          <div class="stat-l">Styles Curated</div>
+        </div>
+        <div>
+          <div class="stat-n">100%</div>
+          <div class="stat-l">Women-Led</div>
+        </div>
+        <div>
+          <div class="stat-n">✦</div>
+          <div class="stat-l">Premium Quality</div>
+        </div>
+      </div>
+      <span class="women-pill">♀ Women-Owned &amp; Operated</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════ COLLECTIONS ══════════════════════════════════════ -->
+<section id="collections">
+  <div class="coll-head">
+    <div>
+      <div class="s-label reveal"><span>Our Collections</span></div>
+      <h2 class="s-title reveal d1">The <em>Edit</em></h2>
+    </div>
+    <a href="#visit" class="quiet-link reveal d2">Visit Store</a>
+  </div>
+
+  <div class="coll-grid">
+    <div class="ci reveal">
+      <div class="ci-bg"></div>
+      <div class="ci-dim"></div>
+      <div class="ci-edge"></div>
+      <div class="ci-inner">
+        <span class="ci-num">01</span>
+        <span class="ci-tag">Featured</span>
+        <div class="ci-name">Signature<br>Dresses</div>
+      </div>
+    </div>
+    <div class="ci reveal d1">
+      <div class="ci-bg"></div>
+      <div class="ci-dim"></div>
+      <div class="ci-edge"></div>
+      <div class="ci-inner">
+        <span class="ci-num">02</span>
+        <span class="ci-tag">New In</span>
+        <div class="ci-name">Fusion<br>Wear</div>
+      </div>
+    </div>
+    <div class="ci reveal d2">
+      <div class="ci-bg"></div>
+      <div class="ci-dim"></div>
+      <div class="ci-edge"></div>
+      <div class="ci-inner">
+        <span class="ci-num">03</span>
+        <span class="ci-tag">Trending</span>
+        <div class="ci-name">Casual<br>Chic</div>
+      </div>
+    </div>
+    <div class="ci reveal d3">
+      <div class="ci-bg"></div>
+      <div class="ci-dim"></div>
+      <div class="ci-edge"></div>
+      <div class="ci-inner">
+        <span class="ci-num">04</span>
+        <span class="ci-tag">Occasion</span>
+        <div class="ci-name">Festive<br>Edit</div>
+      </div>
+    </div>
+    <div class="ci reveal d4">
+      <div class="ci-bg"></div>
+      <div class="ci-dim"></div>
+      <div class="ci-edge"></div>
+      <div class="ci-inner">
+        <span class="ci-num">05</span>
+        <span class="ci-tag">Essentials</span>
+        <div class="ci-name">Everyday<br>Luxe</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PHILOSOPHY ══════════════════════════════════════ -->
+<section id="philosophy">
+  <div class="phil-wrap">
+    <div class="phil-left">
+      <div class="s-label"><span>Our Values</span></div>
+      <h2 class="phil-hed">
+        The<br><strong>Ibizza</strong><br>Promise.
+      </h2>
+      <p class="phil-body reveal d1">
+        We believe that every woman deserves fashion that is as extraordinary as she is — curated with care, crafted with quality, delivered with heart.
+      </p>
+    </div>
+
+    <div class="phil-list">
+      <div class="pl-item reveal">
+        <div class="pl-n">01</div>
+        <div>
+          <div class="pl-title">Premium Quality</div>
+          <p class="pl-desc">Every garment selected for exceptional fabric, finish, and craftsmanship that stands the test of time.</p>
+        </div>
+      </div>
+      <div class="pl-item reveal d1">
+        <div class="pl-n">02</div>
+        <div>
+          <div class="pl-title">Trend-Forward</div>
+          <p class="pl-desc">Collection refreshed constantly to keep you ahead of the curve in contemporary women's fashion.</p>
+        </div>
+      </div>
+      <div class="pl-item reveal d2">
+        <div class="pl-n">03</div>
+        <div>
+          <div class="pl-title">Home Delivery</div>
+          <p class="pl-desc">We bring Ibizza to your doorstep — seamless and reliable delivery across Surat.</p>
+        </div>
+      </div>
+      <div class="pl-item reveal d3">
+        <div class="pl-n">04</div>
+        <div>
+          <div class="pl-title">Personal Styling</div>
+          <p class="pl-desc">In-store team offers personalised guidance to help you find pieces that feel uniquely yours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TESTIMONIALS ════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="testi-top">
+    <div>
+      <div class="s-label reveal"><span>Customer Love</span></div>
+      <h2 class="s-title reveal d1">What They're <em>Saying</em></h2>
+    </div>
+    <div class="g-pill reveal d2">
+      <div class="gp-stars">★★★★</div>
+      <div>
+        <div class="gp-score">4.2 / 5</div>
+        <div class="gp-src">Google</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testi-slider" id="testiSlider">
+    <div class="t-slide active">
+      <p class="t-quote">“Best place for shopping — quality of clothes is very good and all are trendy.”</p>
+      <div class="t-author">Yogita G.</div>
+    </div>
+    <div class="t-slide">
+      <p class="t-quote">“Simply Wow… lovely collection for girls! Found exactly what I was looking for.”</p>
+      <div class="t-author">Satisfied Customer</div>
+    </div>
+    <div class="t-slide">
+      <p class="t-quote">“Very good place for ladies' wear shopping. Great variety and wonderful service.”</p>
+      <div class="t-author">Naresh V.</div>
+    </div>
+  </div>
+
+  <div class="testi-nav">
+    <button class="t-btn" id="tPrev" aria-label="Previous">←</button>
+    <button class="t-btn" id="tNext" aria-label="Next">→</button>
+    <div class="t-dots" id="tDots"></div>
+  </div>
+</section>
+
+<!-- ════ VISIT ════════════════════════════════════════════ -->
+<section id="visit" style="padding:0;">
+  <div class="v-info">
+    <div class="s-label reveal"><span>Find Us</span></div>
+    <h2 class="s-title reveal d1" style="font-size:clamp(2rem,3.8vw,3.2rem)">
+      Come Visit<br><em>Our Store</em>
+    </h2>
+
+    <div class="v-items">
+      <div class="reveal d1">
+        <div class="v-item-label">Address</div>
+        <div class="v-item-val">
+          U-1 &amp; 2, Jolly Arcade, Ghod Dod Rd<br>
+          opp. Rangila Park, Athwa<br>
+          Surat, Gujarat — 395007
+        </div>
+      </div>
+      <div class="reveal d2">
+        <div class="v-item-label">Hours</div>
+        <div class="v-item-val">Open Daily — Closes 9:00 PM</div>
+        <div class="v-sub">● Currently Open</div>
+      </div>
+      <div class="reveal d3">
+        <div class="v-item-label">Phone</div>
+        <div class="v-item-val"><a href="tel:+919327942403">+91 93279 42403</a></div>
+      </div>
+      <div class="reveal d4">
+        <div class="v-item-label">Shopping Options</div>
+        <div class="v-item-val">In-Store · Home Delivery Available</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="v-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14881.564478330554!2d72.7937402!3d21.1765851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e6c989c6295%3A0xc6c4293e5066a3a!2sJolly%20Arcade!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<!-- ════ INSTAGRAM ════════════════════════════════════════ -->
+<section id="instagram">
+  <div class="ig-head">
+    <div>
+      <div class="s-label reveal"><span>Follow Along</span></div>
+      <h2 class="s-title reveal d1">Style on <em>Instagram</em></h2>
+    </div>
+    <a href="https://www.instagram.com/ibizzasurat/" target="_blank" class="ig-handle reveal d2">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="2" y="2" width="20" height="20" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/>
+      </svg>
+      @ibizzasurat
+    </a>
+  </div>
+
+  <div class="ig-grid reveal d2">
+    <div class="ig-tile"><div class="ig-bg"></div><div class="ig-ov">♥</div></div>
+    <div class="ig-tile"><div class="ig-bg"></div><div class="ig-ov">♥</div></div>
+    <div class="ig-tile"><div class="ig-bg"></div><div class="ig-ov">♥</div></div>
+    <div class="ig-tile"><div class="ig-bg"></div><div class="ig-ov">♥</div></div>
+    <div class="ig-tile"><div class="ig-bg"></div><div class="ig-ov">♥</div></div>
+    <div class="ig-tile"><div class="ig-bg"></div><div class="ig-ov">♥</div></div>
+  </div>
+
+  <div class="ig-cta reveal d3">
+    <a href="https://www.instagram.com/ibizzasurat/" target="_blank" class="arr-link arr-wine">
+      Follow @ibizzasurat
+    </a>
+  </div>
+</section>
+
+<!-- ════ FOOTER ═══════════════════════════════════════════ -->
+<footer>
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <a href="#" class="ft-logo">Ibizza</a>
+      <div class="ft-sub">Women's Boutique · Surat, Gujarat</div>
+      <p class="ft-desc">
+        Premium women's fashion curated with passion and purpose. Where style meets soul.
+      </p>
+      <div class="ft-socials">
+        <a href="https://www.instagram.com/ibizzasurat/" target="_blank" aria-label="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="tel:+919327942403" aria-label="Call us">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.61 3.42C1.6 2.34 2.34 1.44 3.42 1.4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.09 6.09l1.77-1.77a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="ft-col">
+      <h5>Navigate</h5>
+      <ul>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#philosophy">Our Values</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+    </div>
+
+    <div class="ft-col">
+      <h5>Collections</h5>
+      <ul>
+        <li><a href="#collections">Signature Dresses</a></li>
+        <li><a href="#collections">Fusion Wear</a></li>
+        <li><a href="#collections">Casual Chic</a></li>
+        <li><a href="#collections">Festive Edit</a></li>
+        <li><a href="#collections">Everyday Luxe</a></li>
+      </ul>
+    </div>
+
+    <div class="ft-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:+919327942403">+91 93279 42403</a></li>
+        <li><a href="https://www.instagram.com/ibizzasurat/" target="_blank">@ibizzasurat</a></li>
+        <li><a href="#visit">Jolly Arcade, Surat</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ft-bottom">
+    <div class="ft-copy">© 2025 Ibizza Boutique · Surat, Gujarat</div>
+    <div class="ft-legal">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
